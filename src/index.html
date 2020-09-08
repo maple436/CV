@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      body {
+      }
+
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      strong {
+        font-weight: normal;
+        color: #f60;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+      }
+
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      img {
+        position: absolute;
+        max-width: 100px;
+      }
+      .React {
+        position: relative;
+      }
+
+      .React img {
+        position: absolute;
+        top: 30px;
+        right: 0;
+      }
+      .Vue {
+        position: relative;
+      }
+
+      .Vue img {
+        position: absolute;
+        top: 30px;
+        right: 0;
+      }
+    </style>
+
+    <style>
+      .projects p {
+        color: #666;
+      }
+
+      .projects strong {
+        color: #f60;
+      }
+
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
+      #skills {
+        width: 500px;
+        height: 270px;
+      }
+      @media print {
+        #skills {
+          display: none;
+        }
+      }
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+
+      .skills > .wrapper strong {
+        color: #f60;
+      }
+
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
+
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <style>
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
+        <h1>严敬之</h1>
+        <p>男 | 20岁 | 前端开发工程师 | 武汉</p>
+        <p>手机：18727935253 | 微信：18727935253 | 邮箱：2313694690@qq.com</p>
+      </section>
+
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>墨鱼UI</h3>
+              <span>
+                <a href="https://github.com/maple436/cuttle-ui">源码链接</a>
+                <a href="http://yan_jingzhi.gitee.io/cuttle-ui">项目预览</a>
+              </span>
+            </header>
+            <p>一款基于 <strong>Vue/Sass</strong> 的 UI 框架。</p>
+            <p>主要有按钮、输入框、弹出框、网格布局、手风琴等组件。</p>
+            <p>
+              项目中使用<strong>Chai</strong>+<strong>Mocha进行单元测试</strong>，并通过<strong
+                >Travis CI</strong
+              >持续集成
+            </p>
+            <p>通过项目使我对Vue和单元测试有了更深的了解</p>
+          </li>
+          <li>
+            <header>
+              <h3>墨鱼记账(Vue/React)</h3>
+            </header>
+            <p>
+              墨鱼记账是一款极简的本地记账应用,有分别基于<strong>Vue全家桶</strong>和<strong
+                >React 全家桶</strong
+              >的单页面应用
+            </p>
+          </li>
+          <li class="Vue">
+            <header>
+              <h3>Vue版本</h3>
+              <span>
+                <a href="https://github.com/maple436/cuttle-money">源码链接</a>
+                <a
+                  href="https://yan_jingzhi.gitee.io/cuttle-money-website/#/money"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>Vue</strong> /
+              <strong>TypeScript</strong>/<strong>Vue Router</strong> 和
+              <strong>Vuex</strong> 的移动端单页面应用。
+            </p>
+
+            <p>
+              项目采用
+              <strong>Vuex</strong
+              >+<strong>localStorage</strong>进行全局状态管理与持久化,以及使用<strong
+                >Vue Router</strong
+              >制作页面路由。
+            </p>
+            <p>实现的功能有记账页面、标签页面、统计页面以及数据持久化等。</p>
+            <p>
+              在项目的实战中使用<strong>TypeScript</strong>,让我更深入的了解了TypeScript与JavaScript的区别。
+            </p>
+
+            <img src="img/Vue.png" alt="" />
+          </li>
+          <li class="React">
+            <header>
+              <h3>React版本</h3>
+              <span>
+                <a href="https://github.com/maple436/cuttle-money-react"
+                  >源码链接</a
+                >
+                <a
+                  href="https://yan_jingzhi.gitee.io/cuttle-money-react-website"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>React</strong> /
+              <strong>TypeScript</strong>/<strong>React Router</strong> 和
+              <strong>React Hooks</strong> 的移动端单页面应用。
+            </p>
+            <p>
+              项目采用
+              <strong>自定义 Hooks</strong
+              >+<strong>localStorage</strong>进行全局状态管理与持久化,以及使用
+            </p>
+            <strong>React Router</strong>制作页面路由。
+            <p></p>
+            <p>实现的功能有记账页面、标签页面、统计页面以及数据持久化等。</p>
+            <p>
+              该项目大量使用 <strong>React Hooks</strong>以及<strong
+                >自定义 Hooks</strong
+              >,让我对 Hooks 有了深刻的理解和应用。
+            </p>
+
+            <img src="img/React.png" alt="" />
+          </li>
+          <li>
+            <header>
+              <h3>急速导航</h3>
+              <span>
+                <a href="https://github.com/maple436/nav-01">源码链接</a>
+                <a href="http://yan_jingzhi.gitee.io/nav-01/dist/index.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>我在学习 <strong>jQuery</strong> 时制作的一个前端导航网站</p>
+            <p>
+              主要有搜索、添加删除网址标签,能够通过键盘敲击首字母快速进入网址、本地持久等功能。
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>会动的皮卡丘</h3>
+              <span>
+                <a href="https://github.com/maple436/pikachu">源码链接</a>
+                <a href="http://yan_jingzhi.gitee.io/pikachu/dist/test.html"
+                  >项目预览</a
+                >
+              </span>
+            </header>
+            <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+            <p>拥有动态显示CSS和调速播放的功能。</p>
+          </li>
+          <li>
+            <header>
+              <h3>手写 DOM 库</h3>
+              <a
+                href="https://github.com/maple436/dom-demo01/blob/master/src/dom.js"
+                >源码链接</a
+              >
+            </header>
+            <p>只是我在学习 DOM API 是制作的一个库</p>
+            <p>
+              实现了元素选择、元素创建、元素删除、<strong>事件委托</strong>等常见DOM
+              API功能。
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills page2">
+        <h2>专业技能</h2>
+        <div class="wrapper">
+          <ul>
+            <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+
+            <li>
+              熟练掌握 <strong>Vue全家桶</strong>的使用，包括
+              VueCli、VueRouter、Vuex 等
+            </li>
+            <li>
+              熟练掌握 <strong>React全家桶</strong>的使用，包括
+              create-react-app、ReactRouter等
+            </li>
+            <li>
+              熟悉<strong>前后端分离</strong>技术，包括
+              AJAX、跨域、前端路由、Cookie、Session 等
+            </li>
+            <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+            <li>了解 <strong>TypeScript</strong> 的使用，在项目中有使用TS。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2018年</time>~<time>2021年</time></span>
+          武汉工程职业技术学院 计算机应用技术 大专
+        </p>
+        <h2>其他链接</h2>
+        <p>
+          最近3个月<a href="https://github.com/maple436">github</a
+          >有超过200次提交。
+        </p>
+        <p>
+          博客链接,
+          <a href="https://www.yuque.com/maple-dfvfh/mkvszq">语雀</a>
+        </p>
+      </section>
+    </article>
+  </body>
+</html>
